@@ -1,0 +1,22 @@
+
+Attempting to recover code related to this paper:
+  http://people.csail.mit.edu/paulfitz/pub/iros03first.pdf
+
+This will be approximate.  The code wasn't version controlled.  I'm picking up
+what was lying around after a related thesis and trying to de-QNX it.  The
+code uses an ancient version of YARP.  I've remapped the needed parts onto
+modern YARP.
+
+A lot of the code checked-in here isn't needed; see CMakeLists.txt for
+full list of active source code.
+
+Requirements:
+ * Linux
+ * YARP (yarp.it)
+ * CMake
+
+Compilation:
+  mkdir build
+  cd build && cmake .. && make
+  ./test_segmentation
+  # output = ppms
